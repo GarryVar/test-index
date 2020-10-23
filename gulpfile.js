@@ -17,16 +17,11 @@ const gulp = require('gulp'),
   webpi = require('gulp-webp');
 
 
-
-
 // Clean
 const clean = () => {
   return del('dist');
 };
 exports.clean = clean;
-
-
-
 
 
 // Copy
@@ -44,16 +39,12 @@ const copy = () => {
 exports.clean = clean;
 
 
-
-
 // Refresh
 const refresh = done => {
   sync.reload();
   done();
 };
 exports.refresh = refresh;
-
-
 
 
 // Css
@@ -72,9 +63,6 @@ const css = () => {
 exports.css = css;
 
 
-
-
-
 // Html
 const html = () => {
   return gulp.src('src/*.html')
@@ -88,9 +76,6 @@ const html = () => {
 exports.html = html;
 
 
-
-
-
 // Script
 const scripts = () => {
   return gulp.src('src/scripts/**/*.js')
@@ -101,9 +86,6 @@ const scripts = () => {
   .pipe(reload({stream: true}))
 };
 exports.scripts = scripts;
-
-
-
 
 
 // Images
@@ -119,8 +101,6 @@ const images = () => {
 exports.images = images;
 
 
-
-
 // Webp
 const webp = () =>  {
   return gulp.src('src/img')
@@ -128,8 +108,6 @@ const webp = () =>  {
   .pipe(gulp.dest('dist/img'))
 };
 exports.webp = webp;
-
-
 
 
 // Server
@@ -148,8 +126,6 @@ const server = () => {
 exports.server = server;
 
 
-
-
 // Build
 const build = gulp.series(
   clean,
@@ -160,8 +136,6 @@ const build = gulp.series(
   server
   );
 exports.build = build;
-
-
 
 
 // Start
