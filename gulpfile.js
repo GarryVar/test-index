@@ -101,7 +101,7 @@ const scripts = () => {
   .pipe(reload({stream: true}))
 };
 exports.scripts = scripts;
- 
+
 
 
 
@@ -152,11 +152,11 @@ exports.server = server;
 
 // Build
 const build = gulp.series(
-  clean, 
-  copy, 
-  css, 
-  html, 
-  scripts, 
+  clean,
+  copy,
+  css,
+  html,
+  scripts,
   server
   );
 exports.build = build;
