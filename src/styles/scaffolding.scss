@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+
+  color: #acacac;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+
+  border-radius: 0;
+}
+
+
+.orange {
+  color: orange;
+}

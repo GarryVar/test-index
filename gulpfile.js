@@ -10,9 +10,7 @@ const gulp = require('gulp'),
   csso = require('gulp-csso'),
   sync = require('browser-sync').create(),
   reload = sync.reload,
-  terser = require('gulp-terser'),
   del = require('del'),
-  babel = require('gulp-babel'),
   htmlmin = require('gulp-htmlmin'),
   webpi = require('gulp-webp');
 
