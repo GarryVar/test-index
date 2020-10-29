@@ -8,7 +8,8 @@
     "stylelint": "stylelint \"src/scripts/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp css",
-    "start": "gulp start"
+    "start": "gulp start",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.4.0",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "webpack": "^5.3.1",
+    "webpack-cli": "^4.1.0"
   }
 }
