@@ -1,0 +1,65 @@
+.nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+
+  width: 100%;
+
+  background-color: #6b6b6b;
+}
+
+.nav__item {
+  position: relative;
+
+  padding: 10px 0;
+
+  border-top: 1px solid #aca6a6;
+  border-bottom: 1px solid #434242;
+
+
+  a {
+    padding-left: 15px;
+    color: white;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: #9cd8ec;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .nav {
+    position: static;
+    width: auto;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  .nav__item {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    border: none;
+
+    a {
+      font-size: 16px;
+      padding-left: 0;
+    }
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .nav__item {
+    padding: 0 20px;
+  }
+}

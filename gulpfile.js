@@ -10,9 +10,7 @@ const gulp = require('gulp'),
   csso = require('gulp-csso'),
   sync = require('browser-sync').create(),
   reload = sync.reload,
-  terser = require('gulp-terser'),
   del = require('del'),
-  babel = require('gulp-babel'),
   htmlmin = require('gulp-htmlmin'),
   webpi = require('gulp-webp');
 
@@ -79,9 +77,6 @@ exports.html = html;
 // Script
 const scripts = () => {
   return gulp.src('src/scripts/**/*.js')
-  .pipe(babel())
-  .pipe(terser())
-  // .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('dist/scripts'))
   .pipe(reload({stream: true}))
 };
