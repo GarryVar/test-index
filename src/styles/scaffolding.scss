@@ -5,10 +5,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-family: "crimson_textregular","Arial", sans-serif;
+  font-family: "Tahoma","Arial", sans-serif;
   font-size: 18px;
+}
 
-  color: #acacac;
+*:focus {
+  outline-offset: 3.5px;
+  outline: 1px dotted lightblue;
 }
 
 a {
@@ -35,9 +38,5 @@ button {
   border: none;
 
   border-radius: 0;
-}
-
-
-.orange {
-  color: orange;
+  cursor: pointer;
 }
