@@ -2,7 +2,7 @@
   "name": "test-index",
   "version": "1.0.0",
   "description": "Only for experimentals",
-  "main": "gulfile.js",
+  "main": "gulpfile.js",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"src/scripts/**/*.scss\" --syntax scss",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^9.0.1",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
