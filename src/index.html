@@ -11,15 +11,16 @@
     <div class="container">
       <div class="header__inner">
 
-        <button class="header__toggle" id="toggler" type="button" aria-label="toggle-navigation">
-          <span class="header__toggle-shape"></span>
-          <span class="header__toggle-shape"></span>
-          <span class="header__toggle-shape"></span>
-        </button>
+        <!--Бургерное меню -->
+        <button class="toggle" id="toggler" type="button" aria-label="toggle-navigation">
+          <svg class="toggle__shape toggle__shape--burger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 341.333 341.333">
+            <path d="M0 277.333h341.333V320H0zM0 149.333h341.333V192H0zM0 21.333h341.333V64H0z"/>
+          </svg>
 
-         <button class="header__toggle header__toggle2 header__toggle--hidden" id="toggler" type="button" aria-label="toggle-navigation">
-          <span class="header__toggle-shape"></span>
-          <span class="header__toggle-shape"></span>
+          <svg class="toggle__shape toggle__shape--close toggle__shape--hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 341.751 341.751">
+            <path d="M-.007 311.525L311.535.072 341.7 30.246 30.16 341.699z"/>
+            <path d="M.047 30.226L30.212.052l311.542 311.454-30.166 30.174z"/>
+          </svg>
         </button>
 
         <a class="header__link" href="index.html"></a>
@@ -61,9 +62,7 @@
   </footer>
 
   <script src="scripts/bundle.js"></script>
-  <!--
   <script type="module" src="scripts/index.js"></script>
   <script type="module" src="scripts/util.js"></script>
- -->
 </body>
 </html>
