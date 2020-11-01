@@ -3,16 +3,19 @@
   nav: document.getElementById('nav'),
 
   start: function() {
-    this.navToggleHandler();
+    this.toggleHandler();
   },
 
-  onNavToggle: function(elem, elemClass) {
+  onToggle: function(elem, elemClass) {
     elem.classList.contains(elemClass) ? elem.classList.remove(elemClass) : elem.classList.add(elemClass);
   },
 
-  navToggleHandler: function() {
+  toggleHandler: function() {
     this.toggleBtn.addEventListener('click', () => {
-      this.onNavToggle(this.nav, 'nav--hidden');
+      this.onToggle(this.nav, 'nav--hidden');
+      for (let i = 0; i < this.toggleBtn.children.length; i++) {
+        this.onToggle(this.toggleBtn.children[i], 'toggle__shape--hidden')
+      }
     })
   }
 };

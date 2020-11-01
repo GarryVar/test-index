@@ -4,10 +4,9 @@
   top: 60px;
   left: 0;
 
-  width: 60%;
+  width: 100%;
 
-  background-color: #4f5157;
-
+  background-color: #475069;
   &--hidden {
     display: none;
   }
@@ -18,8 +17,7 @@
     padding: 10px 0;
     padding-left: 15px;
 
-    // border-top: 1px solid #aaaaaa;
-    // border-bottom: 1px solid #7a7a7a;
+    border-top: 1px solid #393f4f;
   }
 
   .nav__link{
@@ -34,7 +32,6 @@
 
     &[href]:hover,
     &[href]:focus {
-      // color: $hover-link;
       opacity: 0.6;
       text-decoration: underline;
     }
@@ -69,6 +66,6 @@
 
   @media (min-width: $desktop) {
     .nav__link {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
