@@ -12,6 +12,7 @@ const gulp = require('gulp'),
   reload = sync.reload,
   del = require('del'),
   htmlmin = require('gulp-htmlmin'),
+  imagemin = require('gulp-imagemin'),
   webpi = require('gulp-webp');
 
 
