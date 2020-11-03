@@ -40,3 +40,23 @@ button {
   border-radius: 0;
   cursor: pointer;
 }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: none;
+
+  clip: rect(0, 0, 0, 0);
+}

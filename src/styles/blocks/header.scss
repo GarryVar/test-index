@@ -6,15 +6,56 @@
 
 .header__inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  min-height: 60px;
+  padding: 10px;
+}
+
+.header__link {
+  margin: auto;
+
+  color: white;
+  font-size: 30px;
+  font-family: "Consolas", monoscape;
+
+  span {
+    display: inline-block;
+
+    transition: 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    color: orange;
+
+    span:first-child {
+      transform: translateX(-10px);
+    }
+
+     span:last-child {
+      transform: translateX(10px);
+    }
+  }
 }
 
 @media (min-width: $tablet) {
   .header__inner {
     align-items: stretch;
+    padding: 0;
+
+    min-height: 60px;
+  }
+
+  .header__link {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header__link {
+    margin: auto 0;
+    font-size: 30px;
   }
 }
