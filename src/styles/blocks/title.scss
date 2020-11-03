@@ -1,0 +1,22 @@
+.title {
+  position: relative;
+
+  justify-content: center;
+  display: flex;
+
+  color: #444444;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  // &::after {
+  //   content: '';
+
+  //   position: absolute;
+
+  //   bottom: -10px;
+
+  //   width: 60px;
+  //   height: 3px;
+  //   background-color: white;
+  // }
+}
