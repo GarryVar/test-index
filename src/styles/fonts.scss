@@ -2,7 +2,7 @@
   font-family: "crimson_textbold";
   src: url("../fonts/crimsontext-bold-webfont.woff2") format("woff2"),
     url("../fonts/crimsontext-bold-webfont.woff") format("woff");
-  font-weight: bolder;
+  font-weight: bold;
   font-style: normal;
 
 }
@@ -11,8 +11,8 @@
   font-family: "crimson_textbold_italic";
   src: url("../fonts/crimsontext-bolditalic-webfont.woff2") format("woff2"),
     url("../fonts/crimsontext-bolditalic-webfont.woff") format("woff");
-  font-weight: italic;
-  font-style: normal;
+  font-weight: normal;
+  font-style: italic;
 
 }
 
@@ -21,7 +21,7 @@
   src: url("../fonts/crimsontext-italic-webfont.woff2") format("woff2"),
     url("../fonts/crimsontext-italic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 
 }
 
@@ -47,7 +47,7 @@
   font-family: "crimson_textsemibold_italic";
   src: url("../fonts/crimsontext-semibolditalic-webfont.woff2") format("woff2"),
     url("../fonts/crimsontext-semibolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
 
 }
