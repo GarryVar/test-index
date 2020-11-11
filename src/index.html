@@ -11,7 +11,7 @@
     <div class="header__inner  container">
 
       <!--Кнопка меню -->
-      <button class="toggle" id="toggler" type="button" aria-label="toggle-navigation">
+      <button class="toggle" id="toggler" aria-label="toggle-navigation">
         <svg class="toggle__shape toggle__shape--burger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 341.333 341.333">
           <path d="M0 277.333h341.333V320H0zM0 149.333h341.333V192H0zM0 21.333h341.333V64H0z"/>
         </svg>
@@ -29,21 +29,21 @@
       <!-- Навигация -->
       <nav class="nav nav--hidden" id="nav">
         <ul class="nav__menu">
-          <li class="nav__item">
+          <li class="nav__item" role="menuitem">
             <a class="nav__link  nav__link--current">Home</a>
           </li>
 
-          <li class="nav__item">
+          <li class="nav__item" role="menuitem">
             <a class="nav__link" href="download.html">Download</a>
           </li>
 
 
-          <li class="nav__item">
+          <li class="nav__item" role="menuitem">
             <a class="nav__link" href="contribute.html">Contribute</a>
           </li>
 
 
-          <li class="nav__item">
+          <li class="nav__item" role="menuitem">
             <a class="nav__link" href="documentation.html">Documentation</a>
           </li>
 
@@ -52,7 +52,7 @@
           </li>
 
 
-          <li class="nav__item">
+          <li class="nav__item" role="menuitem">
             <a class="nav__link" href="issues.html">Issues</a>
           </li>
         </ul>
@@ -71,13 +71,59 @@
         </div>
       </div>
     </section>
+
+    <section class="registration">
+      <div class="registration__inner container">
+        <form class="registration__form" action="./php">
+          <a class="registration__logo" href="index.html">
+            <img src="img/logo-1.png" alt="Logotype">
+          </a>
+
+          <div class="registration__content">
+            <h2 class="registration__title">Register</h2>
+            <div class="registration__data">
+
+              <div class="half-size">
+                <label>first name </label>
+                 <input type="text" name="first-name">
+              </div>
+
+              <div class="half-size">
+                <label>last name</label>
+                <input class="no-border" type="text" name="last-name">
+              </div>
+
+              <div>
+                <label>email</label>
+                <input class="no-border" type="email" name="email">
+              </div>
+
+              <div>
+                <label>password</label>
+                <input class="no-border" type="password" name="pass">
+              </div>
+
+              <div class="flex">
+                <input id="sign" type="checkbox">
+                <label class="static" for="sign">Sign me up for the weekly newsletter.</label>
+              </div>
+            </div>
+            <button class="registration__submit" type="submit">Sign Me Up</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="footer__inner container"></div>
   </footer>
 
+  <script src="scripts/bundle.js"></script>
   <script type="module" src="scripts/index.js"></script>
-  <script type="module" src="scripts/util.js"></script>
+  <script async type="module" src="scripts/util.js"></script>
+  <script async type="module" src="scripts/filter.js"></script>
+  <script type="module" src="scripts/genres.js"></script>
+  <script async type="module" src="scripts/database.js"></script>
 </body>
 </html>
