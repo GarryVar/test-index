@@ -18,15 +18,18 @@
 .intro__link {
   padding: 20px;
 
+  background-color: #d2d2d28f;
+
   border-radius: 10px;
   border: 3px solid #ffffff;
+  transition: ease-out 0.2s;
 
   &:hover {
-    border-color: orange;
+   border-color: orange;
 
-    h2 {
-      color: orange;
-    }
+   h2 {
+    color: orange;
+   }
   }
 }
 
@@ -67,7 +70,7 @@
 
 @media (min-width: $desktop) {
   .intro__title {
-    font-size: 60px;
+    font-size: 45px;
   }
 
   .intro__link {

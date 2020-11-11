@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+
 body {
   margin: 0;
   padding: 0;
@@ -5,13 +7,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-family: "Tahoma","Arial", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  color: #333333;
 }
 
 *:focus {
-  outline-offset: 3.5px;
-  outline: 1px dotted lightblue;
+  outline-offset: 3px;
+    outline: 1px dashed #00bcd4;
 }
 
 a {
@@ -60,3 +63,4 @@ h3 {
 
   clip: rect(0, 0, 0, 0);
 }
+
